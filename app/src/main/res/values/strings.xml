@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Supergram</string>
+    <string name="title_activity_referencia">ReferenciaActivity</string>
+    <string name="toolbar_title_createaccount">Crear Cuenta</string>
+    <string name="username_card">David Felipe Avila</string>
+    <string name="firstword_card">Hace</string>
+    <string name="timecard_card">45 minutos</string>
+    <string name="likenumber_card">10 Me gusta</string>
+    <string name="tab_search">Buscar</string>
+    <string name="tab_home">Home</string>
+    <string name="tab_profile">Yo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
