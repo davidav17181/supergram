@@ -35,12 +35,12 @@ public class HomeFragment extends Fragment {
         showToolbar(getResources().getString(R.string.tab_home),false,view);
         RecyclerView picturesRecycler = (RecyclerView) view.findViewById(R.id.pictureRecycler);
 
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
         linearLayoutManager.setOrientation(linearLayoutManager.VERTICAL);
 
         picturesRecycler.setLayoutManager(linearLayoutManager);
 
-        PictureAdapterRecyclerView pictureAdapterRecyclerView = new PictureAdapterRecyclerView(buildPictures(), R.layout.cardview_picture,getActivity());
+        PictureAdapterRecyclerView pictureAdapterRecyclerView = new PictureAdapterRecyclerView(getActivity().getApplicationContext(), buildPictures());
 
         picturesRecycler.setAdapter(pictureAdapterRecyclerView);
 
@@ -50,9 +50,9 @@ public class HomeFragment extends Fragment {
 
     public ArrayList<Picture> buildPictures(){
         ArrayList<Picture> pictures = new ArrayList<>();
-        pictures.add(new Picture("","David Felipe Avila", "45 Minutos", "12 Me gusta"));
-        pictures.add(new Picture("","Juan Esteban Vasquez", "10 Minutos", "3 Me gusta"));
-        pictures.add(new Picture("","Sebastian Jaramillo", "5 Minutos", "125 Me gusta"));
+        pictures.add(new Picture(R.drawable.foto,"David Felipe Avila", "45 Minutos", "12 Me gusta"));
+        pictures.add(new Picture(R.drawable.foto2,"Juan Esteban Vasquez", "10 Minutos", "3 Me gusta"));
+        pictures.add(new Picture(R.drawable.foto3,"Sebastian Jaramillo", "5 Minutos", "125 Me gusta"));
         return pictures;
     }
 

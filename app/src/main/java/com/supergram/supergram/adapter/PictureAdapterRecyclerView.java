@@ -1,6 +1,7 @@
 package com.supergram.supergram.adapter;
 
 import android.app.Activity;
+import android.content.Context;
 import android.media.Image;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -20,19 +21,17 @@ import java.util.ArrayList;
 public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdapterRecyclerView.PictureViewHolder>{
 
     private ArrayList<Picture> pictures;
-    private int resource;
-    private Activity activity;
+    private Context context;
 
-    public PictureAdapterRecyclerView(ArrayList<Picture> pictures, int resource, Activity activity) {
+    public PictureAdapterRecyclerView(Context context, ArrayList<Picture> pictures) {
         this.pictures = pictures;
-        this.resource = resource;
-        this.activity = activity;
+        this.context = context;
     }
 
     @Override
     public PictureViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(parent.getContext()).inflate(resource, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_picture, parent, false);
 
         return new PictureViewHolder(view);
     }
@@ -40,11 +39,10 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
     @Override
     public void onBindViewHolder(PictureViewHolder holder, int position) {
             Picture picture = pictures.get(position);
+            holder.imageCard.setBackgroundResource(picture.getPicture());
             holder.usernameCard.setText(picture.getUserName());
             holder.timeCard.setText(picture.getTime());
             holder.likeNumberCard.setText(picture.getLikesNumber());
-
-
     }
 
     @Override
@@ -54,7 +52,7 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
 
     public class PictureViewHolder extends RecyclerView.ViewHolder{
 
-        private ImageView picturecard;
+        private ImageView imageCard;
         private TextView usernameCard;
         private TextView timeCard;
         private TextView likeNumberCard;
@@ -62,7 +60,7 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
         public PictureViewHolder(View itemView) {
             super(itemView);
 
-            picturecard = (ImageView) itemView.findViewById(R.id.pictureCard);
+            imageCard = (ImageView) itemView.findViewById(R.id.imageCard);
             usernameCard = (TextView) itemView.findViewById(R.id.usernameCard);
             timeCard = (TextView) itemView.findViewById(R.id.timeCard);
             likeNumberCard = (TextView) itemView.findViewById(R.id.likeNumberCard);

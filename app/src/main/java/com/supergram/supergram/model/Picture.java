@@ -1,15 +1,15 @@
 package com.supergram.supergram.model;
 
-import android.support.v7.widget.RecyclerView;
+import android.graphics.drawable.Drawable;
 
 public class Picture {
 
-    private String picture;
+    private int picture;
     private String userName;
     private String time;
     private String likesNumber = "0";
 
-    public Picture(String picture, String userName, String time, String likesNumber) {
+    public Picture(int picture, String userName, String time, String likesNumber) {
         this.picture = picture;
         this.userName = userName;
         this.time = time;
@@ -17,11 +17,11 @@ public class Picture {
 
     }
 
-    public String getPicture() {
+    public int getPicture() {
         return picture;
     }
 
-    public void setPicture(String picture) {
+    public void setPicture(int picture) {
         this.picture = picture;
     }
 
