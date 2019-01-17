@@ -50,9 +50,9 @@ public class HomeFragment extends Fragment {
 
     public ArrayList<Picture> buildPictures(){
         ArrayList<Picture> pictures = new ArrayList<>();
-        pictures.add(new Picture(R.drawable.foto,"David Felipe Avila", "45 Minutos", "12 Me gusta"));
-        pictures.add(new Picture(R.drawable.foto2,"Juan Esteban Vasquez", "10 Minutos", "3 Me gusta"));
-        pictures.add(new Picture(R.drawable.foto3,"Sebastian Jaramillo", "5 Minutos", "125 Me gusta"));
+        pictures.add(new Picture("http://genchi.info/images/wallpaper-4k-5.jpg","David Felipe Avila", "45 Minutos", "12 Me gusta"));
+        pictures.add(new Picture("http://genchi.info/images/wallpaper-4k-24.jpg","Juan Esteban Vasquez", "10 Minutos", "3 Me gusta"));
+        pictures.add(new Picture("http://genchi.info/images/wallpaper-4k-32.jpg","Sebastian Jaramillo", "5 Minutos", "125 Me gusta"));
         return pictures;
     }
 

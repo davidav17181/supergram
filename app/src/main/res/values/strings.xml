@@ -5,10 +5,14 @@
     <string name="username_card">David Felipe Avila</string>
     <string name="firstword_card">Hace</string>
     <string name="timecard_card">45 minutos</string>
-    <string name="likenumber_card">10 Me gusta</string>
+    <string name="likenumber_card">12 Me gusta</string>
     <string name="tab_search">Buscar</string>
     <string name="tab_home">Home</string>
     <string name="tab_profile">Yo</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="transitionname_picture">transitionnamepicture</string>
+    <string name="titleimagedetail">The dark side of the moon</string>
+    <string name="secondword_detail">Me gusta</string>
+    <string name="lorem">Como ya comenté en la primera parte del artículo dedicado a The Dark Side of the Moon, no estamos ante un álbum cualquiera. El octavo disco de Pink Floyd marcó un antes y un después en la historia del grupo británico, en el rock y en la música moderna en general.  Tras analizar en detalle el contexto que rodeó a la creación de este disco y las consecuencias de su lanzamiento, en esta segunda parte de la crítica me voy a centrar en la parte puramente musical del elepé, repasando en detalle sus canciones y el significado que hay tras ellas. Y es que ya sabéis que estamos ante un álbum conceptual que gira en torno al ser humano en toda su extensión, una idea tan ambiciosa que sólo unos genios podían abarcar sin que se les fuera de las manos.  Oficialmente diez canciones forman el conjunto, aunque en función de la versión este número puede variar, y las letras de todas ellas vienen firmadas por Roger Waters, quien se acredita también de forma exclusiva o compartida en la composición de hasta siete temas.</string>
 </resources>

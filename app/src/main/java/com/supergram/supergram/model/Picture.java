@@ -1,27 +1,26 @@
 package com.supergram.supergram.model;
 
-import android.graphics.drawable.Drawable;
+import android.support.v7.widget.RecyclerView;
 
 public class Picture {
 
-    private int picture;
+    private String picture;
     private String userName;
     private String time;
-    private String likesNumber = "0";
+    private String like_number = "0";
 
-    public Picture(int picture, String userName, String time, String likesNumber) {
+    public Picture(String picture, String userName, String time, String like_number) {
         this.picture = picture;
         this.userName = userName;
         this.time = time;
-        this.likesNumber = likesNumber;
-
+        this.like_number = like_number;
     }
 
-    public int getPicture() {
+    public String getPicture() {
         return picture;
     }
 
-    public void setPicture(int picture) {
+    public void setPicture(String picture) {
         this.picture = picture;
     }
 
@@ -34,7 +33,6 @@ public class Picture {
     }
 
     public String getTime() {
-
         return time;
     }
 
@@ -42,11 +40,11 @@ public class Picture {
         this.time = time;
     }
 
-    public String getLikesNumber() {
-        return likesNumber;
+    public String getLike_number() {
+        return like_number;
     }
 
-    public void setLikesNumber(String likesNumber) {
-        this.likesNumber = likesNumber;
+    public void setLike_number(String like_number) {
+        this.like_number = like_number;
     }
 }

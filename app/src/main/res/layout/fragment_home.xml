@@ -16,7 +16,7 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
-        android:paddingTop="57dp">
+        android:paddingTop="10dp">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/pictureRecycler"
